@@ -2,9 +2,10 @@
 
 A powerline status line for Claude Code, shared across the team. It shows:
 
-```
- repo   branch ✓2 ●1 ↑1   Opus 4.8 ⚡high   +128 -34   ███████░░ 640k/1M (64%)   5h 38%
-```
+![Status line preview](assets/statusline-preview.svg)
+
+> Rendered with a Nerd Font in your terminal it looks like:
+> `  tarmeez   ⎇ main ✓2 ●1 ↑1   ◆ Opus 4.8 ⚡high   +128 -34   ███████░░ 640k/1M (64%)   5h 38%`
 
 | Segment | Shows |
 |---------|-------|

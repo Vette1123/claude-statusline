@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="42" viewBox="0 0 830 42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">
+  <!-- panel -->
+  <rect x="0" y="0" width="830" height="42" rx="6" fill="#0d1117"/>
+
+  <!-- segment backgrounds (contiguous) -->
+  <rect x="6"   y="2" width="81"  height="38" fill="#0ea5e9"/>
+  <rect x="87"  y="2" width="159" height="38" fill="#8b5cf6"/>
+  <rect x="246" y="2" width="168" height="38" fill="#334155"/>
+  <rect x="414" y="2" width="96"  height="38" fill="#0f766e"/>
+  <rect x="510" y="2" width="222" height="38" fill="#a16207"/>
+  <rect x="732" y="2" width="78"  height="38" fill="#4338ca"/>
+
+  <!-- powerline arrows (each in the LEFT segment's color, over the next bg) -->
+  <polygon points="87,2 101,21 87,40"   fill="#0ea5e9"/>
+  <polygon points="246,2 260,21 246,40" fill="#8b5cf6"/>
+  <polygon points="414,2 428,21 414,40" fill="#334155"/>
+  <polygon points="510,2 524,21 510,40" fill="#0f766e"/>
+  <polygon points="732,2 746,21 732,40" fill="#a16207"/>
+  <polygon points="810,2 824,21 810,40" fill="#4338ca"/>
+
+  <!-- segment text -->
+  <text x="18"  y="27" fill="#0a1119" font-weight="bold">tarmeez</text>
+  <text x="101" y="27" fill="#18102d">&#9095; main &#10003;2 &#9679;1 &#8593;1</text>
+  <text x="260" y="27" fill="#e2e8f0">&#9670; Opus 4.8 &#9889;high</text>
+  <text x="426" y="27" fill="#ccfbf1">+128 -34</text>
+  <text x="524" y="27">
+    <tspan fill="#fef3c7">&#9608;&#9608;&#9608;&#9608;&#9608;</tspan><tspan fill="#5c3a1e">&#9608;&#9608;&#9608;</tspan><tspan fill="#fef3c7"> 640k/1M (64%)</tspan>
+  </text>
+  <text x="746" y="27" fill="#e0e7ff">&#10711; 5h 38%</text>
+</svg>
