@@ -19,7 +19,7 @@
   <polygon points="810,2 824,21 810,40" fill="#4338ca"/>
 
   <!-- segment text -->
-  <text x="18"  y="27" fill="#0a1119" font-weight="bold">tarmeez</text>
+  <text x="18"  y="27" fill="#0a1119" font-weight="bold">my-repo</text>
   <text x="101" y="27" fill="#18102d">&#9095; main &#10003;2 &#9679;1 &#8593;1</text>
   <text x="260" y="27" fill="#e2e8f0">&#9670; Opus 4.8 &#9889;high</text>
   <text x="426" y="27" fill="#ccfbf1">+128 -34</text>
