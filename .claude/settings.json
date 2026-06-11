@@ -1,0 +1,6 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "pwsh -NoProfile -ExecutionPolicy Bypass -Command '$j=[Console]::In.ReadToEnd();$o=$j|ConvertFrom-Json;$d=$o.workspace.project_dir;if(-not $d){$d=$o.cwd};if(-not $d){$d=(Get-Location).Path};while($d -and -not(Test-Path(Join-Path $d \".claude/statusline.ps1\"))){$p=Split-Path $d -Parent;if($p -eq $d){$d=$null;break};$d=$p};if($d){$j|& (Join-Path $d \".claude/statusline.ps1\")}'"
+  }
+}
