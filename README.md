@@ -20,24 +20,24 @@ Empty segments auto-hide. If the row doesn't fit the terminal, it splits onto tw
 
 ## Requirements
 
-- **PowerShell 7+ (`pwsh`)** — cross-platform; this is the only hard dependency.
+- **PowerShell 7+ (`pwsh`)**: cross-platform, and the only hard dependency.
   - Windows: already bundled / `winget install Microsoft.PowerShell`
   - macOS: `brew install powershell`
   - Linux: see https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-linux
-- **git** (for the branch/status segment — optional, segment just hides if absent)
+- **git** (for the branch/status segment; optional, the segment hides if git is absent)
 - **A Nerd Font** selected in your terminal, for the `` arrows and glyphs.
   Get one at https://www.nerdfonts.com (e.g. *CaskaydiaCove NF*, *MesloLGS NF*) and set it as your terminal font.
   No `jq` required.
 
 ## Install (per teammate)
 
-The config is committed in this repo under `.claude/`, so it applies automatically once you have the requirements above — **no per-machine setup beyond installing `pwsh` + a Nerd Font.**
+The config is committed in this repo under `.claude/`, so it applies automatically once you have the requirements above. You only need to install `pwsh` and a Nerd Font on each machine.
 
 1. Make sure `.claude/settings.json` and `.claude/statusline.ps1` are committed at the **repo root**.
 2. Install `pwsh` and a Nerd Font (see Requirements).
 3. Restart Claude Code in the repo. The status line appears after the first message.
 
-Project settings (`.claude/settings.json`) override each person's personal `~/.claude/settings.json` for the status line, so everyone gets the same bar.
+Project settings (`.claude/settings.json`) override each person's personal `~/.claude/settings.json` for the status line, so everyone sees the same bar.
 
 The launch command walks up from your current directory to find `.claude/statusline.ps1`, so it works whether you start Claude at the repo root **or** in a subfolder (e.g. `apps/seeker`).
 
@@ -52,7 +52,7 @@ The launch command walks up from your current directory to find `.claude/statusl
 
 Everything lives in `.claude/statusline.ps1`. Common tweaks near the top / segment section:
 
-- **Palette** — the `bg`/`fg` RGB triples on each `$s_*` segment.
-- **Glyphs** — the `$G_*` variables.
-- **Add cost** — Claude Code also pipes `.cost.total_cost_usd`; add a segment for it.
-- **Bar width** — the `$cells` value in the context section.
+- **Palette**: the `bg`/`fg` RGB triples on each `$s_*` segment.
+- **Glyphs**: the `$G_*` variables.
+- **Add cost**: Claude Code also pipes `.cost.total_cost_usd`; add a segment for it.
+- **Bar width**: the `$cells` value in the context section.
